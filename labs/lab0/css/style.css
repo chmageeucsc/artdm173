@@ -14,7 +14,7 @@ Date: 01.31.2025
 }
 
 body {
-  background-image: url(images/grass.jpg), url(images/bg.jpg);
+  background-image: url(lab0/images/grass.jpg), url(lab0/images/bg.jpg);
   background-repeat: no-repeat, no-repeat;
   background-size: 100% 21%, 100% 100%;
   font-family: lato;
@@ -165,7 +165,7 @@ footer {
 @media only screen and (min-width : 700px) {
 
   body {
-    background-image: url(images/grass.jpg), url(images/bg.jpg);
+    background-image: url(lab0/images/grass.jpg), url(lab0/images/bg.jpg);
     background-repeat: no-repeat, no-repeat;
     background-size: 100% 20%, 100% 100%;
     font-family: lato;

@@ -1,0 +1,93 @@
+/*<!--
+  Student Name: Chantel Gee
+  Assignment Name: Lab 1 : CSS Layout with Flexbox and Grid
+  Date: 02.04.2025
+*/
+
+/* MOBILE SIZE */
+@media only screen and (min-width : 400px) {
+
+  body {
+    background-color: rgb(37, 27, 58);
+    margin: 0;
+    padding: 0;
+  }
+
+  .logoTitle {
+    align-items: center;
+    background-color: rgb(10,113,172);
+    color: rgb(212, 238, 253);
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-bottom: 0;
+    padding-right: 5%;
+  }
+
+  .logoTitle figure {
+    margin: 0;
+    padding: 0 5% 0 0;
+  }
+
+  .logoTitle figure img {
+    margin: 0;
+    max-height: 100px;
+    padding: 0;
+  }
+
+  nav {
+    background-color: rgb(184, 211, 252);
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-between;
+    padding: 3% 3%;
+  }
+
+  nav a {
+    color: rgb(7, 15, 84);
+    text-decoration: none;
+  }
+
+  .grid {
+    box-sizing: border-box;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;  
+  }
+
+  .grid img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .grid .mainText {
+    color: rgb(220, 204, 215);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    padding: 5%;
+  }
+
+  .grid h2 {
+    color: rgb(209, 169, 227);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+}
+
+/* TABLET SIZE AND BIGGER */
+@media only screen and (min-width : 700px) {
+
+  .logoTitle {
+    padding-right: 1%;
+  }
+
+  nav {
+    padding: 2% 1%;
+  }
+  
+  .grid .mainText {
+    padding: 3%;
+  }
+}

@@ -5,7 +5,7 @@
 */
 
 /* MOBILE SIZE */
-@media only screen and (min-width : 400px) {
+@media only screen and (min-width : 200px) {
 
   body {
     background-color: rgb(37, 27, 58);

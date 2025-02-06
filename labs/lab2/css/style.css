@@ -1,0 +1,48 @@
+/*<!--
+  Student Name: Chantel Gee
+  Assignment Name: Lab 2: Transitions & Animation
+  Date: 02.05.2025
+*/
+
+/* MOBILE SIZE */
+@media only screen and (min-width : 200px) {
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: pink;
+  display: block;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.splash {
+  background-color: maroon;
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  }
+
+  h1 {
+    color: maroon;
+  }
+}
+
+/* TABLET SIZE AND BIGGER */
+@media only screen and (min-width : 700px) {
+
+  
+}

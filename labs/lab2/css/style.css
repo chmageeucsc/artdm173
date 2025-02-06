@@ -25,19 +25,55 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  align-items: center;
+  background-color: rgb(228, 149, 186);
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+  h1, nav a {
+    color: maroon;
+    text-decoration: none;
+    padding: 0 50px;
+  }
+
+  figure {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 75%;
+  }
+
 .splash {
-  background-color: maroon;
   box-sizing: border-box;
   height: 100%;
   left: 0;
   position: absolute;
-  text-align: center;
   top: 0;
   width: 100%;
+
+  animation: shrink 1s ease-out;
   }
 
-  h1 {
-    color: maroon;
+  @keyframes shrink {
+    from {
+      background-color: maroon;
+      height: 100%;
+    }
+  
+    to {
+      background-color: maroon;
+      height: 0%;
+    }
   }
 }
 

@@ -6,18 +6,19 @@
 
 @media only screen and (min-width : 200px) {
   body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     margin: 0;
   }
   
   .grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .grid-item {
     margin: 0 0 10px 0;
     padding-left: 10px;
+    position: relative;
   }
   
   .grid-item-1 {
@@ -48,72 +49,12 @@
     background-color: rgb(233, 196, 255);
   }
 
-}
-
-@media only screen and (min-width : 700px) {
-
-  body {
-    background-color: rgb(0, 0, 0);
-  }
-
-  .grid {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    height: 100vh;
-    width: 100vw;
-  
-  }
-
-  .grid-item {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding-left: 0;
-    position: relative;
-  }
-  
-  .grid-item-1 {
-    animation: t1 1.5s forwards;
-    grid-area: 1 / 1 / span 8 / span 4;
-  }
-  
-  .grid-item-2 {
-    animation: t2 1.5s forwards;
-    grid-area: 1 / 5 / span 4 / span 4;
-  }
-  
-  .grid-item-3 {
-    animation: t1 1.5s forwards;
-    grid-area: 5 / 5 / span 4 / span 2;
-  }
-
-  .grid-item-4 {
-    animation: t2 1.5s forwards;
-    grid-area: 5 / 7 / span 2 / span 2;
-  }
-
-  .grid-item-5 {
-    animation: t1 1.5s forwards;
-    grid-area: 7 / 7 / span 2 / span 1;
-  }
-
-  .grid-item-6 {
-    animation: t2 1.5s forwards;
-  }
-
-  .grid-item-7 {
-    animation: t1 1.5s forwards;
-  }
-
   .color {
     bottom: 0;
     left: 0;
+    padding-left: 15px;
     position: absolute;
     right: 0;
-    text-align: center;
   }
 
   .red {
@@ -148,7 +89,73 @@
     color: aliceblue;
   }
 
+}
+
+@media only screen and (min-width : 700px) {
+
+  body {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 100vh;
+    width: 100vw;
   
+  }
+
+  .grid-item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+    position: relative;
+  }
+  
+  /* special grid placement */
+  .grid-item-1 {
+    animation: t1 1.5s forwards;
+    grid-area: 1 / 1 / span 8 / span 4;
+  }
+  
+  .grid-item-2 {
+    animation: t2 1.5s forwards;
+    grid-area: 1 / 5 / span 4 / span 4;
+  }
+  
+  .grid-item-3 {
+    animation: t1 1.5s forwards;
+    grid-area: 5 / 5 / span 4 / span 2;
+  }
+
+  .grid-item-4 {
+    animation: t2 1.5s forwards;
+    grid-area: 5 / 7 / span 2 / span 2;
+  }
+
+  .grid-item-5 {
+    animation: t1 1.5s forwards;
+    grid-area: 7 / 7 / span 2 / span 1;
+  }
+
+  .grid-item-6 {
+    animation: t2 1.5s forwards;
+  }
+
+  .grid-item-7 {
+    animation: t1 1.5s forwards;
+  }
+
+  .color {
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  /* transition load from left to right */
   @keyframes t1 {
     0% {
       width: 0%;
@@ -158,6 +165,7 @@
     }
   }
 
+  /* transition load from top to bottom */
   @keyframes t2 {
     0% {
       height: 0%;

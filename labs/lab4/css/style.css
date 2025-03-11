@@ -10,15 +10,23 @@ Date: 03.10.25*/
 }
 
 @media only screen and (min-width : 700px) {
+  body {
+    background-color: rgb(11, 30, 41);
+    color: rgb(245, 245, 245);
+  }
+  
   nav {
     align-items: center;
-    background-color: rgb(235, 214, 207);
+    background: linear-gradient(to right, white 20%, rgb(13,86,115) 100%);
+    background-color: rgb(13,86,115);
     display: flex;
     justify-content: space-between;
   }
   
   .navImg {
-    width: 20%;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 10%;
   }
   
   .navLinks {
@@ -27,18 +35,41 @@ Date: 03.10.25*/
   
   .navLinks p {
     padding: 0 10px;
-  
   }
-  
+
   .heroDiv {
-    margin: 0 5em;
+    display: block;
+    height: 600px;
+    mask-image: linear-gradient(100deg, transparent 39%, rgba(0,0,0,1) 44%, rgba(2,0,36,1) 100%);
+  }
+
+  .heroDiv img:first-child {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    mix-blend-mode: soft-light;
+    width: 100%;
   }
   
   .heroImg {
-    clip-path: circle(40%);
-    float: left;
-    object-fit: fill;
-    shape-outside: circle(45%);
-    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  footer {
+    align-items: center;
+    bottom: 0;
+    background-color: rgb(7, 79, 119);
+    display: flex;
+    left: 0;
+    height: 5%;
+    padding-left: 1%;
+    position: absolute;
+    right: 0;
+  }
+  
+  footer a {
+    color: rgb(245, 245, 245);
   }
 }

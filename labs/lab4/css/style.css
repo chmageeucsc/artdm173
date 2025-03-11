@@ -1,0 +1,44 @@
+/*<!--Student Name: Chantel Gee
+Assignment Name: Lab 4: Image Effects
+Date: 03.10.25*/
+
+@media only screen and (min-width : 200px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width : 700px) {
+  nav {
+    align-items: center;
+    background-color: rgb(235, 214, 207);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navImg {
+    width: 20%;
+  }
+  
+  .navLinks {
+    display: flex;
+  }
+  
+  .navLinks p {
+    padding: 0 10px;
+  
+  }
+  
+  .heroDiv {
+    margin: 0 5em;
+  }
+  
+  .heroImg {
+    clip-path: circle(40%);
+    float: left;
+    object-fit: fill;
+    shape-outside: circle(45%);
+    width: 70%;
+  }
+}

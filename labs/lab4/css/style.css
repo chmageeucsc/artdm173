@@ -47,13 +47,14 @@ Date: 03.10.25*/
     margin: 0 5%;
   }
 
-  main {
-    position: relative;
+  .navLinks p:hover {
+    background-color: rgb(95, 95, 95);
+    color: rgb(245, 245, 245);
+    cursor: pointer;
   }
 
-  .mainText {
-    position: absolute;
-    top: 0;
+  main {
+    position: relative;
   }
 
   .heroBG {
@@ -75,11 +76,17 @@ Date: 03.10.25*/
   }
   
   .heroImg {
+    filter: brightness(70%);
     height: 100%;
     object-fit: cover;
     width: 100%;
   }
-  
+
+  .mainText {
+    position: absolute;
+    top: 0;
+  }
+
   footer {
     align-items: center;
     bottom: 0;

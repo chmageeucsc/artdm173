@@ -85,12 +85,11 @@ Date: 03.10.25*/
   .right {
     float: right;
     shape-outside: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
-    width: 60%;
+    width: 82%;
+    height: 500px;
   }
-
   .mainText {
-    position: absolute;
-    top: 0;
+    z-index: 20;
   }
 
   footer {

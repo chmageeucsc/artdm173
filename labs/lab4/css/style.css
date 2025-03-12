@@ -82,6 +82,12 @@ Date: 03.10.25*/
     width: 100%;
   }
 
+  .right {
+    float: right;
+    shape-outside: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+    width: 60%;
+  }
+
   .mainText {
     position: absolute;
     top: 0;

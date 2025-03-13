@@ -12,34 +12,103 @@ Date: 03.10.25*/
     margin: 0;
     padding: 0;
   }
-}
-
-@media only screen and (min-width : 700px) {
+  
   body {
     background-color: rgb(11, 30, 41);
     color: rgb(245, 245, 245);
     font-family: Roboto, sans-serif;
   }
+
+  nav {
+    background: linear-gradient(white 40%, rgb(13,86,115) 100%);
+    color: rgb(11, 30, 41);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navImg {
+    margin: auto;
+    padding: 7% 0 2% 0;
+    width: 50%
+  }
+
+  .navLinks {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+  }
+
+  .navLinks p {
+    background-color: rgb(217, 217, 217);
+    color: rgb(11, 30, 41);
+    padding: 5px 15px;
+    margin: 1% 5%;
+  }
+
+  .heroDiv {
+    height: 30vh;
+  }
+
+  .heroDiv img:first-child {
+    height: 30vh;
+    filter: contrast(170%);
+    object-fit: cover;
+    position: absolute;
+    mix-blend-mode: soft-light;
+    width: 100%;
+  }
+  
+  .heroImg {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .mainText {
+    padding: 10% 5%;
+  }
+
+  footer {
+    align-items: center;
+    bottom: 0;
+    background-color: rgb(7, 79, 119);
+    display: flex;
+    left: 0;
+    height: 5%;
+    padding-left: 3%;
+    position: absolute;
+    right: 0;
+  }
+  
+  footer a {
+    color: rgb(245, 245, 245);
+  }
+}
+
+@media only screen and (min-width : 700px) {
   
   nav {
     align-items: center;
     background: linear-gradient(to right, white 20%, rgb(13,86,115) 100%);
     background-color: rgb(13,86,115);
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding-right: 5%;
   }
-  
+
   .navImg {
     margin-left: 1%;
     margin-top: 1%;
+    padding: 0;
     width: 10%;
   }
-  
+
   .navLinks {
     display: flex;
+    padding: 0;
   }
-  
+
   .navLinks p {
     background-color: rgb(217, 217, 217);
     color: rgb(11, 30, 41);
@@ -88,23 +157,12 @@ Date: 03.10.25*/
   .mainText {
     font-size: 1.2em;
     margin: 2%;
+    padding: 0;
     position: absolute;
     top: 0;
   }
 
   footer {
-    align-items: center;
-    bottom: 0;
-    background-color: rgb(7, 79, 119);
-    display: flex;
-    left: 0;
-    height: 5%;
     padding-left: 1%;
-    position: absolute;
-    right: 0;
-  }
-  
-  footer a {
-    color: rgb(245, 245, 245);
   }
 }

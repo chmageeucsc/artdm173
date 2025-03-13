@@ -54,11 +54,10 @@ Date: 03.10.25*/
   }
 
   main {
-    display: grid;
+    position: relative;
   }
 
   .heroBG {
-    grid-area: 1 / 1 / 1 / 1;
     background-color: rgb(7, 79, 119);
   }
 
@@ -69,7 +68,6 @@ Date: 03.10.25*/
   }
 
   .heroDiv img:first-child {
-    grid-area: 1 / 1 / 1 / 1;
     height: 100%;
     object-fit: cover;
     position: absolute;
@@ -78,7 +76,6 @@ Date: 03.10.25*/
   }
   
   .heroImg {
-    grid-area: 1 / 1 / 1 / 1;
     filter: brightness(70%);
     height: 100%;
     object-fit: cover;
@@ -86,15 +83,15 @@ Date: 03.10.25*/
   }
 
   .right {
-    grid-area: 1 / 1 / 1 / 1;
     float: right;
     shape-outside: polygon(15% 0%, 100% 0, 100% 100%, 0% 100%);
-    width: 80%;
+    width: 60%;
     height: 500px;
   }
 
   .mainText {
-    grid-area: 1 / 1 / 1 / 1;
+    position: absolute;
+    top: 0;
   }
 
   footer {

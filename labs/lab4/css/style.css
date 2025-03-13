@@ -54,21 +54,18 @@ Date: 03.10.25*/
   }
 
   main {
+    height: auto;
     position: relative;
   }
 
-  .heroBG {
-    background-color: rgb(7, 79, 119);
-  }
-
   .heroDiv {
-    display: block;
-    height: 500px;
+    height: 89.3vh;
     mask-image: linear-gradient(100deg, transparent 39%, rgba(0,0,0,1) 44%, rgba(2,0,36,1) 100%);
   }
 
   .heroDiv img:first-child {
     height: 100%;
+    filter: contrast(170%);
     object-fit: cover;
     position: absolute;
     mix-blend-mode: soft-light;
@@ -76,7 +73,6 @@ Date: 03.10.25*/
   }
   
   .heroImg {
-    filter: brightness(70%);
     height: 100%;
     object-fit: cover;
     width: 100%;
@@ -85,11 +81,13 @@ Date: 03.10.25*/
   .right {
     float: right;
     shape-outside: polygon(15% 0%, 100% 0, 100% 100%, 0% 100%);
-    width: 60%;
-    height: 500px;
+    width: 75%;
+    height: 85.3vh;
   }
 
   .mainText {
+    font-size: 1.2em;
+    margin: 2%;
     position: absolute;
     top: 0;
   }

@@ -2,13 +2,18 @@
 Assignment Name: Lab 5: Responsive Images
 Date: 03.28.25*/
 
-@media only screen and (min-width : 200px) {
+@media only screen and (min-width : 300px) {
   * {
     margin: 0;
   }
 
   body {
     background-image: url(https://cdn12.picryl.com/photo/2016/12/31/seamless-tile-background-backgrounds-textures-fc7921-1024.jpg);
+    color: aliceblue;
+  }
+
+  .icon {
+    width: 100px;
   }
 }
 

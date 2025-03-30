@@ -10,8 +10,9 @@ Date: 03.29.25*/
 
   body {
     background-image: url(https://cdn12.picryl.com/photo/2016/12/31/seamless-tile-background-backgrounds-textures-fc7921-1024.jpg);
-    background-position: center;
+    background-position: top left;
     background-repeat: repeat;
+    background-size: contain;
     color: aliceblue;
     font-family: "Kanit", sans-serif;
   }
@@ -39,7 +40,7 @@ Date: 03.29.25*/
   }
 
   .icon {
-    width: 80px;
+    width: 10vh;
   }
 
   nav {
@@ -66,10 +67,24 @@ Date: 03.29.25*/
     z-index: 1;
   }
 
+  .heroText {
+    background-color: rgba(17, 15, 39, 60%);
+    bottom: 0;
+    padding: 2% 3%;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+
   .nebula {
     filter: brightness(40%);
     object-fit: cover;
     width: 100%;
+  }
+
+  .bgText p {
+    background-color: rgba(17, 15, 39, 50%);
+    padding: 3%;
   }
 
   .article1, .article2 {
@@ -109,9 +124,23 @@ Date: 03.29.25*/
   }
 
   footer {
-    background-color: #110f27;
-    padding: 2% 3%;
+    padding-top: 2vh;
+    position: relative;
+  }
+
+  footer p{
+    padding: 0 3%;
+    position: relative;
     text-align: center;
+  }
+
+  .footerBG {
+    height: 11vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
   }
 }
 
@@ -174,7 +203,11 @@ Date: 03.29.25*/
     cursor: pointer;
   }
 
-  footer {
-    padding: 1% 3%;
+  footer p {
+    padding: 0 5%;
+  }
+
+  .footerBG {
+    height: 8vh;
   }
 }

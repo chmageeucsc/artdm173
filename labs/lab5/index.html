@@ -32,17 +32,21 @@ Date: 03.29.2025-->
   </header>
   
   <main>
+    <div class="bgText">
+      <p>Responsive background image: The background uses a repeating star image that starts from the top left and fills the screen.</p>
+    </div>
     <div class="hero">
-      <h2 class="heroTitle">Space: The Final Frontier</h2>
+      <h2 class="heroTitle">Srcset: Resolution Swapping</h2>
+      <p class="heroText">The hero image uses two different resolution photos. The resolution changes depending on the size of the browser window.</p>
       <img class="nebula" src="images/space1.jpg"
       alt="Nebulous Cloud"
-      srcset="images/space1.jpg 400w, images/space2.jpg 800w, images/space3.jpg 1600w"
+      srcset="images/space1.jpg 200w, images/space2.jpg 400w, images/space3.jpg 800w"
       sizes="(min-width: 700px) 1600px, 800px">
     </div>
     <div class="article1">
       <div class="a1text">
-        <h2>How to Become an Astronaut</h2>
-        <p> Astronaut requirements have changed with NASA's goals and missions. Today, to be considered for an astronaut position, applicants must meet several different qualifications. Find out how!</p>
+        <h2>Object-fit</h2>
+        <p>The image uses object-fit: cover and object-position: 95% 50% to keep the astronaut in focus. The astronaut remains in frame no matter the size of the browser.</p>
       </div>
       <img src="https://saft.com/sites/default/files/styles/header/public/paragraphs_item/hero_image/space_home.jpg?itok=0x-IP_Fc" alt="Astronaut">
     </div>
@@ -54,15 +58,16 @@ Date: 03.29.2025-->
         <img src="images/rover2.jpg" alt="Curiosity, the Mars Rover">
       </picture>
       <div class="a2text">
-        <h2>Curiosity: The Mars Rover</h2>
-        <p>Part of NASA's Mars Science Laboratory mission, Curiosity, was the largest and most capable rover ever sent to Mars when it launched in 2011. Curious? Click to read more!</p>
+        <h2>Art Direction Swapping</h2>
+        <p>In a mobile layout, a smaller vertical photo is displayed for the viewer. When the website is viewed on desktop, a larger horizontal photo of the same subject is displayed instead.</p>
       </div>
     </div>
     
   </main>
 
   <footer>
-    <p>This  is a fictitious website created for ARTDM 173: Web Design 2.</p>
+    <p>SVG: The website "logo" and footer background use SVGs to make the website more interesting without compromising image size or resolution. </p>
+    <img class="footerBG" src="images/shape.svg" alt="Footer Background">
   </footer>
 
 </body>

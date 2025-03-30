@@ -170,6 +170,7 @@ Date: 03.29.25*/
 
   .article1:hover, .article2:hover {
     color: rgb(253, 226, 151);
+    cursor: pointer;
   }
 
   footer {

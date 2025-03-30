@@ -10,8 +10,9 @@ Date: 03.29.25*/
 
   body {
     background-image: url(https://cdn12.picryl.com/photo/2016/12/31/seamless-tile-background-backgrounds-textures-fc7921-1024.jpg);
+    background-position: center;
+    background-repeat: repeat;
     color: aliceblue;
-    
     font-family: "Kanit", sans-serif;
   }
 

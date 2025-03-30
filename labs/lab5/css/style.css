@@ -1,6 +1,6 @@
 /*<!--Student Name: Chantel Gee
 Assignment Name: Lab 5: Responsive Images
-Date: 03.28.25*/
+Date: 03.29.25*/
 
 @media only screen and (min-width : 300px) {
   * {
@@ -44,10 +44,6 @@ Date: 03.28.25*/
   #menu {
     width: 40px;
   }
-
-  .desktopNav {
-    display: none;
-  }
   
   .hero {
     height: 300px;
@@ -59,9 +55,11 @@ Date: 03.28.25*/
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
   }
 
   .nebula {
+    filter: brightness(40%);
     object-fit: cover;
     width: 100%;
   }
@@ -74,7 +72,7 @@ Date: 03.28.25*/
     margin: 3%;
   }
 
-  .a1text p, .a2text {
+  .a1text p, .a2text p {
     font-size: 1.2em;
   }
 
@@ -90,38 +88,70 @@ Date: 03.28.25*/
     justify-content: center;
   }
 
+  .article2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .article2 img {
     height: 400px;
     object-fit: cover;
-    object-position: 50% 10%;
+    object-position: 50% 0%;
     width: 70%;
+  }
+
+  footer {
+    background-color: #110f27;
+    padding: 2% 3%;
+    text-align: center;
   }
 }
 
 @media only screen and (min-width : 700px) {
   body {
-    color: red;
+    color: aliceblue;
+  }
+
+  input {
+    margin-left: 15%;
   }
 
   .hero {
-    height: 500px;
+    height: 600px;
   }
 
-  .article1 {
+  .heroTitle {
+    font-size: 2em;
+  }
+
+  .article1, .article2 {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
   }
 
-  .a1text {
+  .a1text, .a2text {
     margin: 5%;
   }
 
-  .a1text h2 {
-    margin-bottom: 20%;
+  .a1text h2, .a2text h2{
+    font-size: 1.8em;
+    margin-bottom: 5%;
   }
 
   .article1 img {
     object-fit: cover;
     object-position: 80% 50%;
+    width: 50vw;
+  }
+
+  .article2 img {
+    object-fit: cover;
+    object-position: 20% 50%;
+    width: 50vw;
+  }
+
+  footer {
+    padding: 1% 3%;
   }
 }

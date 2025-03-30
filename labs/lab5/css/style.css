@@ -48,9 +48,17 @@ Date: 03.28.25*/
   .desktopNav {
     display: none;
   }
-
+  
   .hero {
     height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .heroTitle {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .nebula {
@@ -58,8 +66,35 @@ Date: 03.28.25*/
     width: 100%;
   }
 
-  .article1 {
-    width: 90%;
+  .article1, .article2 {
+    margin: 1%;
+  }
+
+  .a1text h2, .a1text p , .a2text h2, .a2text p {
+    margin: 3%;
+  }
+
+  .a1text p, .a2text {
+    font-size: 1.2em;
+  }
+
+  .article1 img {
+    height: 400px;
+    object-fit: cover;
+    object-position: 95% 50%;
+    width: 100%;
+  }
+
+  picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  .article2 img {
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 10%;
+    width: 70%;
   }
 }
 
@@ -70,5 +105,23 @@ Date: 03.28.25*/
 
   .hero {
     height: 500px;
+  }
+
+  .article1 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .a1text {
+    margin: 5%;
+  }
+
+  .a1text h2 {
+    margin-bottom: 20%;
+  }
+
+  .article1 img {
+    object-fit: cover;
+    object-position: 80% 50%;
   }
 }

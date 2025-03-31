@@ -30,9 +30,10 @@ Date: 03.29.25*/
   }
 
   body {
-    background: linear-gradient(180deg, rgba(35, 35, 105, 0.8) 0%, rgba(24, 16, 53, 0.9) 87%, rgb(218, 143, 173) 100%), url("https://t4.ftcdn.net/jpg/02/87/60/39/360_F_287603921_NGjOTWre2djiPMoSYGhrz2aUYXPRgzuu.jpg");
+    background: linear-gradient(180deg, rgba(35, 35, 105, 0.8) 0%, rgba(24, 16, 53, 0.9) 87%, #da8fad 100%), url("https://t4.ftcdn.net/jpg/02/87/60/39/360_F_287603921_NGjOTWre2djiPMoSYGhrz2aUYXPRgzuu.jpg");
     background-position: top left;
     color: #EFEBFD;
+    height: 100vh;
   }
 
   /* HOME */
@@ -40,7 +41,13 @@ Date: 03.29.25*/
   main.home {
     align-items: center;
     display: flex;
-    height: 80vh;
+    height: 70vh;
+    
+  }
+
+  .homeElements {
+    align-items: center;
+    display: flex;
     justify-content: center;
   }
 
@@ -62,12 +69,13 @@ Date: 03.29.25*/
     padding: 2%;
   }
 
-  footer {
+  .footer {
+    align-items: center;
     bottom: 0;
     color: #570d2a;
-    left: 0;
+    display: flex;
     padding: 2% 2%;
-    position: fixed;
+    position: absolute;
     width: 100%;
   }
 

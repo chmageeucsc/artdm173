@@ -35,7 +35,9 @@ Date: 03.29.25*/
     color: #EFEBFD;
   }
 
-  main {
+  /* HOME */
+
+  main.home {
     align-items: center;
     display: flex;
     height: 80vh;
@@ -61,11 +63,32 @@ Date: 03.29.25*/
   }
 
   footer {
-    position: fixed;
-    left: 0;
     bottom: 0;
-    width: 100%;
+    color: #570d2a;
+    left: 0;
     padding: 2% 2%;
+    position: fixed;
+    width: 100%;
+  }
+
+  /* GALLERY */
+
+  main.gallery {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 5%;
+  }
+
+  .box {
+    align-items: center;
+    background-color: #E2AEC3;
+    color: #18122E;
+    display: flex;
+    font-size: 2em;
+    height: 30vh;
+    justify-content: center;
   }
 
 }

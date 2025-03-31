@@ -1,0 +1,65 @@
+/*<!--Student Name: Chantel Gee
+Assignment Name: Lab 5: Responsive Images
+Date: 03.29.25*/
+
+@media only screen and (min-width : 300px) {
+
+  * {
+    margin: 0;
+  }
+
+  header {
+    background-color: rgba(24, 18, 46, .7);
+  }
+
+  nav {
+    display: flex;
+  }
+  nav h1 {
+    padding: 2%;
+  }
+
+  body {
+    background: linear-gradient(180deg, rgba(35, 35, 105, 0.8) 0%, rgba(24, 16, 53, 0.9) 87%, rgb(218, 143, 173) 100%), url("https://t4.ftcdn.net/jpg/02/87/60/39/360_F_287603921_NGjOTWre2djiPMoSYGhrz2aUYXPRgzuu.jpg");
+    background-position: top left;
+    color: #EFEBFD;
+  }
+
+  main {
+    align-items: center;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+  }
+
+  .leftText {
+    text-align: right;
+  }
+
+  .pink {
+    color:#E2AEC3
+  }
+
+  .blue {
+    color:#AEC0E2;
+  }
+
+  .profPic {
+    border-radius: 50%;
+    height: 40vh;
+    padding: 2%;
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2% 2%;
+  }
+
+}
+
+@media only screen and (min-width : 700px) {
+  
+}

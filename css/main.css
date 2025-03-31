@@ -9,14 +9,24 @@ Date: 03.29.25*/
   }
 
   header {
+    align-items: center;
     background-color: rgba(24, 18, 46, .7);
+    display: flex;
+  }
+
+  .logo {
+    height: 5vh;
+    padding: 2%;
   }
 
   nav {
     display: flex;
+    justify-content: space-around;
   }
-  nav h1 {
-    padding: 2%;
+  nav a {
+    color: #EFEBFD;
+    padding: 4% 6%;
+    text-decoration: none;
   }
 
   body {

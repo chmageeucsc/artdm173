@@ -4,6 +4,11 @@ Date: 04.02.25*/
 
 @media only screen and (min-width : 300px) {
 
+  @font-face {
+    font-family: VIRUST;
+    src: url(VIRUST.ttf);
+  }
+
   * {
     margin: 0;
   }
@@ -25,6 +30,7 @@ Date: 04.02.25*/
   }
   nav a {
     color: #EFEBFD;
+    font-family: VIRUST;
     padding: 4% 6%;
     text-decoration: none;
   }
@@ -33,7 +39,8 @@ Date: 04.02.25*/
     background: linear-gradient(180deg, rgba(35, 35, 105, 0.8) 0%, rgba(24, 16, 53, 0.9) 87%, #da8fad 100%), url("https://t4.ftcdn.net/jpg/02/87/60/39/360_F_287603921_NGjOTWre2djiPMoSYGhrz2aUYXPRgzuu.jpg");
     background-position: top left;
     color: #EFEBFD;
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: 100vh;
   }
 
   /* HOME */
@@ -72,11 +79,16 @@ Date: 04.02.25*/
   .footer {
     align-items: center;
     bottom: 0;
-    color: #570d2a;
     display: flex;
-    padding: 2% 2%;
     position: absolute;
     width: 100%;
+  }
+  
+  .footer h2 {
+    
+    color: #570d2a;
+    font-family: VIRUST;
+    padding: 2%;
   }
 
   /* GALLERY */
@@ -91,7 +103,7 @@ Date: 04.02.25*/
 
   .box {
     align-items: center;
-    background-color: #E2AEC3;
+    background-color: rgb(226, 174, 195);
     border: 2px solid #570d2a;
     color: #18122E;
     display: flex;
@@ -101,9 +113,36 @@ Date: 04.02.25*/
   }
 
   .box a {
-    color: #18122E;
+    color: #EFEBFD;
+    font-family: "Source Serif 4", serif;
+    font-style: italic;
+    font-weight: 800;
     text-decoration: none;
-    text-shadow: -1px 0 #EFEBFD, 0 1px #EFEBFD, 1px 0 #EFEBFD, 0 -1px #EFEBFD;
+    text-shadow: -1px 0 #18122E, 0 1px #18122E, 1px 0 #18122E, 0 -1px #18122E;
+  }
+
+  .box1 {
+    background: linear-gradient(180deg, rgba(0, 0, 50, 0.8) 0%, rgba(0, 0, 50, 0.5) 100%), url("/images/uxuiGallery.PNG");
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .box2 {
+    background: linear-gradient(180deg, rgba(0, 0, 50, 0.8) 0%, rgba(0, 0, 50, 0.5) 100%), url("/images/illus1.png");
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .box3 {
+    background: linear-gradient(180deg, rgba(0, 0, 50, 0.8) 0%, rgba(0, 0, 50, 0.5) 100%), url("/images/web1.png");
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .box4 {
+    background: linear-gradient(180deg, rgba(0, 0, 50, 0.8) 0%, rgba(0, 0, 50, 0.5) 100%), url("/images/type1.png");
+    background-position: top center;
+    background-size: cover;
   }
 
 }

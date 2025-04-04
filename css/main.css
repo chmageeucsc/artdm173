@@ -95,7 +95,7 @@ Date: 04.02.25*/
 
   .profPic {
     border-radius: 50%;
-    filter: drop-shadow(rgb(255, 112, 200) 0px 0px 10px);
+    filter: drop-shadow(0px 0px 10px #ff70c8);
     height: 40vh;
     margin-left: auto;
     margin-right: auto;

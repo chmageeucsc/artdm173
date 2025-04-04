@@ -23,7 +23,8 @@ Date: 04.02.25*/
   }
 
   .logo {
-    height: 5vh;
+    width: 12%;
+    height: auto;
     padding: 2%;
   }
 
@@ -42,37 +43,44 @@ Date: 04.02.25*/
     background: linear-gradient(180deg, rgba(35, 35, 105, 0.8) 0%, rgba(24, 16, 53, 0.9) 87%, #da8fad 100%), url("https://t4.ftcdn.net/jpg/02/87/60/39/360_F_287603921_NGjOTWre2djiPMoSYGhrz2aUYXPRgzuu.jpg");
     background-position: top left;
     color: #EFEBFD;
-    /* height: 100vh; */
     min-height: 100vh;
     position: relative;
   }
 
   /* HOME */
 
-  main.home {
-    align-items: center;
-    display: flex;
-    height: 70vh;
-    justify-content: center;
-    
+  .homeElements {
+    display: grid;
+    font-family: "Source Serif 4", serif;
+    gap: 5%;
+    grid-template-areas:
+    "profPic"
+    "rightText"
+    "leftText";
+    grid-template-columns: 1fr;
+    padding: 5%;
   }
 
-  .homeElements {
-    align-items: center;
-    display: flex;
-    font-family: "Source Serif 4", serif;
-    justify-content: center;
+  .homeElements div.profPic {
+    grid-area: profPic;
+  }
+  
+  .homeElements div.rightText {
+    grid-area: rightText;
+  }
+
+  .homeElements div.leftText {
+    grid-area: leftText;
   }
 
   .leftText {
     font-size: .7em;
-    text-align: right;
-    width: 15vw;
+    text-align: center;
   }
 
   .rightText {
     font-size: .8em;
-    width: 15vw;
+    text-align: center;
   }
 
   .pink {
@@ -89,12 +97,14 @@ Date: 04.02.25*/
     border-radius: 50%;
     filter: drop-shadow(rgb(255, 112, 200) 0px 0px 10px);
     height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
     padding: 4%;
   }
 
   /* GALLERY */
 
-  main.gallery {
+  .galleryBoxes{
     display: grid;
     gap: 0;
     grid-template-columns: 1fr 1fr;
@@ -120,10 +130,12 @@ Date: 04.02.25*/
     width:100%;
     height:100%;
     font-family: "Source Serif 4", serif;
-    font-size: larger;
+    font-size: .9em;
     font-style: italic;
     font-weight: 800;
     margin-bottom: auto;
+    margin-left: 3%;
+    margin-right: 3%;
     margin-top: auto;
     text-align: center;
     text-decoration: none;
@@ -169,7 +181,6 @@ Date: 04.02.25*/
   main.uxui a, main.type a, main.illus a, main.web a {
     color: #EFEBFD;
     font-size: 1.2em;
-    padding: 5%;
     text-decoration: none;
   }
 
@@ -181,20 +192,32 @@ Date: 04.02.25*/
     padding: 1%;
   }
 
-  main.uxui, main.type, main.illus, main.web, main.resume {
+  main.uxui, main.type, main.illus, main.web, main.resume, main.gallery {
     padding: 2% 5% 8%;
   }
 
   .galleryIMG {
     display: block;
+    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
     max-height: 60vh;
     max-width: 70vw;
-    padding: 2% 0;
   }
 
-  main.resume h1 {
+  .linkedIMG {
+    border: 10px solid rgb(255, 112, 200);
+  }
+
+  .linked {
+    text-align: center;
+  }
+
+  main.resume {
+    margin: 5% 0;
+  }
+
+  main.resume h1, main.gallery h1 {
     font-family: VIRUST;
     text-align: center;
   }
@@ -253,23 +276,13 @@ Date: 04.02.25*/
     font-weight: 400;
   }
 
-  .footer {
-    align-items: center;
-    bottom: 0;
-    display: flex;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .footer h2 {
-    color: #570d2a;
-    font-family: VIRUST;
-    padding: 2%;
-  }
-
 }
 
 @media only screen and (min-width : 900px) {
+
+  .logo {
+    width: 7%;
+  }
 
   nav a:hover, nav .blue:hover {
     animation: floating 2s infinite;
@@ -286,6 +299,20 @@ Date: 04.02.25*/
     50% {
       transform: translateY(-4px)
     }
+  }
+
+  main.home {
+    align-items: center;
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    
+  }
+
+  .homeElements {
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   .leftText {
@@ -310,6 +337,25 @@ Date: 04.02.25*/
   main.uxui a:hover, main.type a:hover, main.illus a:hover, main.web a:hover {
     color:#E2AEC3;
     text-shadow: rgb(255, 112, 200) 0px 0px 5px;
+  }
+
+  .box a {
+    box-sizing: border-box;
+    color: #EFEBFD;
+    display:inline-block;
+    width:100%;
+    height:100%;
+    font-family: "Source Serif 4", serif;
+    font-size: larger;
+    font-style: italic;
+    font-weight: 800;
+    margin-bottom: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: auto;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: -1px 0 #18122E, 0 1px #18122E, 1px 0 #18122E, 0 -1px #18122E;
   }
 
   .box:hover a {
@@ -346,8 +392,10 @@ Date: 04.02.25*/
   }
 
   main.resume {
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
     max-width: 75%;
   }
 

@@ -4,6 +4,7 @@ Date: 04.10.25*/
 
 /* SEARCH BAR BG COLOR: #121212
   BUTTON BG COLOR: #434349
+  BUTTON HOVER BG COLOR: #3f3f3f
   DARK BG COLOR: #0f0f0f
 */
 
@@ -15,6 +16,7 @@ Date: 04.10.25*/
   }
 
   * {
+    box-sizing: border-box;
     margin: 0;
   }
 
@@ -22,6 +24,11 @@ Date: 04.10.25*/
     background: rgb(48,48,52);
     background: linear-gradient(90deg, rgba(48,48,52,1) 0%, rgba(15,15,15,1) 100%);
     margin: 2%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
   }
 
   .leftNav {
@@ -47,6 +54,36 @@ Date: 04.10.25*/
     font-family: YouTube;
   }
 
+  form.searchBar input[type=text] {
+    background: #121212;
+    border: 1px solid #121212;
+    border-radius: 10px 0 0 10px;
+    float: left;
+    font-size: 17px;
+    padding: 10px;
+    width: 85%;
+  }
+  
+  form.searchBar button {
+    background: #272727;
+    border: 1px solid #272727;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    float: left;
+    padding: 10px;
+    width: 15%;
+  }
+
+  form.searchBar input[type=text]:focus {
+    outline: #3240b9 solid 1px;
+  }
+
+  #search {
+    width: 15px;
+  }
 }
 
 @media only screen and (min-width : 700px) {

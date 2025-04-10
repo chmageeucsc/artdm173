@@ -26,9 +26,9 @@ Date: 04.10.25*/
   }
 
   body {
-    background: rgb(48,48,52);
-    background: linear-gradient(90deg, rgba(48,48,52,1) 0%, rgba(15,15,15,1) 100%);
-    margin: 2%;
+    background: #303034;
+    background: linear-gradient(90deg, rgba(48,48,52,1) 0%, rgb(15, 15, 15) 100%);
+    margin: 1% 2%;
   }
 
   nav {
@@ -42,12 +42,15 @@ Date: 04.10.25*/
   }
 
   #menu, #bell {
+    cursor: pointer;
     width: 25px;
   }
 
   .ytLogo {
     align-items: center;
+    cursor: pointer;
     display: flex;
+    margin-right: 15px;
     padding-left: 20px;
   }
 
@@ -61,6 +64,71 @@ Date: 04.10.25*/
   }
 
   .middleNav {
+    align-items: center;
+    display: flex;
+    grid-area: 1 / 2 / 2 / 4;
+    justify-content: end;
+  }
+
+  form.searchBar input[type=text] {
+    display: none;
+  }
+  
+  form.searchBar button {
+    background: #303034;
+    border: 1px solid #303034;
+    border-left: none;
+    border-radius: 50px;
+    color: #f1f1f1;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+  }
+
+  #search {
+    width: 16px;
+  }
+
+  .rightNav {
+    align-items: center;
+    display: flex;
+    grid-area: 1 / 4 / 2 / 5;
+    justify-content: end;
+  }
+
+  #create {
+    background: #272727;
+    border: 1px solid #272727;
+    border-radius: 10px;
+    color: #f1f1f1;
+    font-family: yt-med;
+    font-size: 17px;
+    height: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 100px;
+  }
+
+  #create:hover {
+    background-color: #434349;
+    cursor: pointer;
+  }
+
+  #cat {
+    cursor: pointer;
+    margin-left: 15px ;
+    width: 40px;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 700px) {
+
+  .middleNav {
+    display: block;
     grid-area: 1 / 2 / 2 / 4;
   }
 
@@ -68,6 +136,7 @@ Date: 04.10.25*/
     background: #121212;
     border: 1px solid #121212;
     border-radius: 10px 0 0 10px;
+    display: block;
     float: left;
     font-size: 17px;
     padding: 10px;
@@ -94,29 +163,4 @@ Date: 04.10.25*/
   #search {
     width: 15px;
   }
-
-  .rightNav {
-    align-items: center;
-    display: flex;
-    grid-area: 1 / 4 / 2 / 5;
-    justify-content: end;
-  }
-
-  #create {
-    background: #272727;
-    border: 1px solid #272727;
-    color: #f1f1f1;
-    font-family: yt-med;
-    font-size: 17px;
-    height: 40px;
-    width: 100px;
-  }
-
-  #cat {
-    width: 40px;
-  }
-}
-
-@media only screen and (min-width : 700px) {
- 
 }

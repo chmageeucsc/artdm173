@@ -58,7 +58,7 @@ Date: 04.10.25*/
     width: 35px;
   }
 
-  h2 {
+  h2, h3 {
     color: #f1f1f1;
     font-family: yt-light;
   }
@@ -109,16 +109,13 @@ Date: 04.10.25*/
     width: 100px;
   }
 
-  #create:hover {
-    background-color: #434349;
-    cursor: pointer;
-  }
-
   #cat {
     cursor: pointer;
     margin-left: 15px ;
     width: 40px;
   }
+
+  /* VIDEO */
 
   .videoDiv {
     margin-top: 15px;
@@ -135,10 +132,50 @@ Date: 04.10.25*/
     padding-top: 10px;
   }
 
-  #cat2 {
+  .user {
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  #cat2, #moon {
     cursor: pointer;
-    padding-top: 10px;
-    width: 50px;
+    width: 40px;
+  }
+
+  .user h3 {
+    cursor: pointer;
+    padding-left: 15px;
+  }
+
+  #subscribe {
+    background: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+    color: #272727;
+    font-family: yt-med;
+    font-size: 17px;
+    height: 40px;
+    margin-left: 25px;
+    width: 100px;
+  }
+
+  /* AUDIO */
+
+  .audioDiv {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85vw;
+  }
+
+  .avGif {
+    width: 100%;
+  }
+
+  .music {
+    background-color: #f1f1f1;
+    width: 100%;
   }
 
   .hidden {
@@ -183,5 +220,15 @@ Date: 04.10.25*/
 
   #search {
     width: 15px;
+  }
+
+  #create:hover {
+    background-color: #434349;
+    cursor: pointer;
+  }
+
+  #subscribe:hover {
+    background-color: #dadada;
+    cursor: pointer;
   }
 }

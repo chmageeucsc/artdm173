@@ -12,6 +12,11 @@ Date: 04.10.2025-->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="../lab6/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../lab6/images//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../lab6/images//favicon-16x16.png">
+  <link rel="manifest" href="../lab6/images//site.webmanifest">
+
   <title>Rich Media</title>
 </head>
 
@@ -40,7 +45,7 @@ Date: 04.10.2025-->
   </header>
   
   <main>
-    <div class="videoDiv">
+    <div class="videoDiv hidden">
       <video class="ena" controls poster="video/thumbnail.PNG">
         <source src="video/ena.mp4" type="video/mp4">
         <p>
@@ -50,11 +55,33 @@ Date: 04.10.2025-->
       </video>
       <div class="description">
         <h2>ENA - Extinction Party</h2>
-        <img id="cat2" src="images/cat2.svg" alt="Profile Picture">
+        <div class="user">
+          <img id="cat2" src="images/cat2.svg" alt="Profile Picture">
+          <h3>Joel G</h3>
+          <button id="subscribe" type="button">Subscribe</button>
+        </div>
       </div>
     </div>
-    <div class="audioDiv hidden">
-      <h2>this is audio</h2>
+    <div class="audioDiv">
+      <img src="https://i.pinimg.com/originals/4e/de/5a/4ede5a33c5490195b2b17466ad26d124.gif" class="avGif" alt="Synthwave gif">
+      <audio class="music" controls>
+        <source src="audio/backroomLabyrinth.mp3" type="audio/mp3">
+        <p>
+          Here is a link to the audio file itself.
+          <a href="audio/backroomLabyrinth.mp3">Audio here</a>
+        </p>
+      </audio>
+      <div class="description">
+        <h2>Backroom Labyrinth - Oliver Buckland</h2>
+        <div class="user">
+          <img id="moon" src="images/moon.svg" alt="Profile Picture">
+          <h3>Oliver Buckland</h3>
+          <button id="subscribe" type="button">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="links">
+
     </div>
   </main>
 </body>

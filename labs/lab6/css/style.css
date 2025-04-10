@@ -11,8 +11,13 @@ Date: 04.10.25*/
 @media only screen and (min-width : 300px) {
 
   @font-face {
-    font-family: YouTube;
+    font-family: yt-light;
     src: url(../images/yt-light.ttf);
+  }
+
+  @font-face {
+    font-family: yt-med;
+    src: url(../images/yt-med.ttf);
   }
 
   * {
@@ -27,15 +32,16 @@ Date: 04.10.25*/
   }
 
   nav {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .leftNav {
     display: flex;
+    grid-area: 1 / 1 / 2 / 2;
   }
 
-  #menu {
+  #menu, #bell {
     width: 25px;
   }
 
@@ -51,7 +57,11 @@ Date: 04.10.25*/
 
   h2 {
     color: #f1f1f1;
-    font-family: YouTube;
+    font-family: yt-light;
+  }
+
+  .middleNav {
+    grid-area: 1 / 2 / 2 / 4;
   }
 
   form.searchBar input[type=text] {
@@ -69,7 +79,7 @@ Date: 04.10.25*/
     border: 1px solid #272727;
     border-left: none;
     border-radius: 0 10px 10px 0;
-    color: white;
+    color: #f1f1f1;
     cursor: pointer;
     font-size: 17px;
     float: left;
@@ -83,6 +93,27 @@ Date: 04.10.25*/
 
   #search {
     width: 15px;
+  }
+
+  .rightNav {
+    align-items: center;
+    display: flex;
+    grid-area: 1 / 4 / 2 / 5;
+    justify-content: end;
+  }
+
+  #create {
+    background: #272727;
+    border: 1px solid #272727;
+    color: #f1f1f1;
+    font-family: yt-med;
+    font-size: 17px;
+    height: 40px;
+    width: 100px;
+  }
+
+  #cat {
+    width: 40px;
   }
 }
 

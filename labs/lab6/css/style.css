@@ -120,6 +120,27 @@ Date: 04.10.25*/
     width: 40px;
   }
 
+  .videoDiv {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85vw;
+  }
+
+  .ena {
+    width: 100%;
+  }
+
+  .description h2 {
+    padding-top: 10px;
+  }
+
+  #cat2 {
+    cursor: pointer;
+    padding-top: 10px;
+    width: 50px;
+  }
+
   .hidden {
     display: none;
   }

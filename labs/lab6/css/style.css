@@ -291,7 +291,7 @@ Date: 04.10.25*/
 
   .audioDiv img {
     object-fit: cover;
-    height: 60%;
+    height: 65%;
   }
 
   #subscribe:hover {
@@ -326,7 +326,7 @@ Date: 04.10.25*/
   }
 
   .vidThumbnail h3 , .audThumbnail h3, .fakeThumbnail h3 {
-    background-color: rgba(18, 18, 18, 0.5);
+    background-color: rgba(18, 18, 18, 0.7);
     border-radius: 4px;
     bottom: 0;
     margin: 10px;
@@ -346,5 +346,6 @@ Date: 04.10.25*/
     display: flex;
     flex-direction: column;
     padding-left: 15px;
+    max-width: 175px;
   }
 }

@@ -1,7 +1,7 @@
 //
 // Student Name: Chantel Gee
-// Assignment Name: Project 3: Dynamic Media Player
-// Date: 11.02.2024
+// Assignment Name: Lab 6: Rich Media
+// Date: 04.10.25
 //
 
 document.addEventListener("DOMContentLoaded", init)

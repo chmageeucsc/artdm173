@@ -12,6 +12,10 @@ Date: 04.10.25*/
 
 @media only screen and (min-width : 300px) {
 
+  .hidden {
+    display: none;
+  }
+
   @font-face {
     font-family: yt-light;
     src: url(../images/yt-light.ttf);
@@ -180,10 +184,6 @@ Date: 04.10.25*/
     width: 100%;
   }
 
-  .hidden {
-    display: none;
-  }
-
   /* LINKS */
 
   .links {
@@ -193,14 +193,14 @@ Date: 04.10.25*/
     width: 85vw;
   }
 
-  .vidLink, .audLink {
+  .vidLink, .audLink, .fakeLink {
     cursor: pointer;
     display: flex;
     margin-top: 10px;
     width: 100%;
   }
 
-  .vidThumbnail, .audThumbnail {
+  .vidThumbnail, .audThumbnail, .fakeThumbnail{
     position: relative;
     width: min-content;
   }
@@ -210,7 +210,7 @@ Date: 04.10.25*/
     width: 25vw;
   }
 
-  .vidThumbnail h3 , .audThumbnail h3 {
+  .vidThumbnail h3 , .audThumbnail h3, .fakeThumbnail h3 {
     background-color: rgba(18, 18, 18, 0.5);
     border-radius: 4px;
     bottom: 0;
@@ -227,14 +227,14 @@ Date: 04.10.25*/
     padding-top: 5px;
   }
 
-  .vidInfo, .audInfo {
+  .vidInfo, .audInfo, .fakeInfo {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
   }
 }
 
-@media only screen and (min-width : 700px) {
+@media only screen and (min-width : 1000px) {
 
   .middleNav {
     display: block;
@@ -266,6 +266,7 @@ Date: 04.10.25*/
   }
 
   form.searchBar input[type=text]:focus {
+    color: #f1f1f1;
     outline: #3240b9 solid 1px;
   }
 
@@ -278,8 +279,72 @@ Date: 04.10.25*/
     cursor: pointer;
   }
 
+  main {
+    display: flex;
+  }
+
+  /* VIDEO */
+
+  .videoDiv, .audioDiv {
+    width: 70vw;
+  }
+
+  .audioDiv img {
+    object-fit: cover;
+    height: 60%;
+  }
+
   #subscribe:hover {
     background-color: #dadada;
     cursor: pointer;
+  }
+
+  .links {
+    margin-top: 15px;
+    width: 30vw;
+  }
+
+  .vidLink, .audLink, .fakeLink {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .vidThumbnail, .audThumbnail, .fakeThumbnail {
+    object-fit: cover;
+    position: relative;
+    width: min-content;
+  }
+  
+  .thumbnail {
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 110px;
+    width: 10vw;
+  }
+
+  .vidThumbnail h3 , .audThumbnail h3, .fakeThumbnail h3 {
+    background-color: rgba(18, 18, 18, 0.5);
+    border-radius: 4px;
+    bottom: 0;
+    margin: 10px;
+    padding: 2px 8px;
+    position: absolute;
+    right: 0;
+    width: min-content;
+  }
+
+  h4 {
+    color: #a1a1a1;
+    font-family: yt-light;
+    padding-top: 5px;
+  }
+
+  .vidInfo, .audInfo, .fakeInfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
   }
 }

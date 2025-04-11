@@ -154,7 +154,7 @@ Date: 04.10.25*/
     padding-left: 15px;
   }
 
-  #subscribe {
+  #subscribe1, #subscribe2 {
     background: #f1f1f1;
     border: 1px solid #f1f1f1;
     border-radius: 20px;
@@ -194,7 +194,6 @@ Date: 04.10.25*/
   }
 
   .vidLink, .audLink, .fakeLink {
-    cursor: pointer;
     display: flex;
     margin-top: 10px;
     width: 100%;
@@ -294,7 +293,7 @@ Date: 04.10.25*/
     height: 65%;
   }
 
-  #subscribe:hover {
+  #subscribe1:hover, #subscribe2:hover {
     background-color: #dadada;
     cursor: pointer;
   }
@@ -310,6 +309,16 @@ Date: 04.10.25*/
     justify-content: center;
     margin-top: 10px;
     width: 100%;
+  }
+
+  .fakeLink {
+    cursor: default;
+  }
+
+  .vidLink:hover, .audLink:hover {
+    background-color: #434349;
+    border-radius: 10px;
+    width: 95%;
   }
 
   .vidThumbnail, .audThumbnail, .fakeThumbnail {

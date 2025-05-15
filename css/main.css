@@ -409,6 +409,13 @@ Date: 04.02.25*/
     content:url("/images/web2.png");
   }
 
+  .asgnBox {
+    display: grid;
+	  grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 80%;
+  }
+
   main.resume {
     margin-bottom: auto;
     margin-left: auto;

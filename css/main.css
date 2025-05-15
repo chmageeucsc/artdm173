@@ -213,6 +213,24 @@ Date: 04.02.25*/
     text-align: center;
   }
 
+  /* CLASSWORK */
+
+  .assignment {
+    background-color: #da8fad;
+    color: #570d2a;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 15px;
+    width: 90%;
+  }
+
+  .assignment a {
+    color: #18122E;
+  }
+
+  /* RESUME */
+
   main.resume {
     margin: 5% 0;
   }
